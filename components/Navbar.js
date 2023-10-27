@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='flex sticky top-0 bg-[#151515] justify-between items-center shadow-lg px-1 gap-3 pr-5'>
         <div className='text-white flex items-center'>
-          <button className='md:hidden block'
+          <button className='lg:hidden block'
           onClick={()=>setActive(active?false:true)}
           >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -23,8 +23,8 @@ const Navbar = () => {
            <span className='text-3xl  font-saira'>Romi Finance</span>
         </div>
         <div 
-        className={`text-gray-400 top-0  fixed lg:static bg-[#151515] lg:flex gap-3 text-base ${active?"-left-0 flex flex-col w-full min-h-screen p-5 pl-7 gap-y-5":"-left-full"}`}>
-          <button className='md:hidden block'
+        className={`md:ml-0  text-gray-400 top-0  fixed lg:static bg-[#151515] lg:flex gap-3 text-base ${active?"-left-0 flex flex-col w-full min-h-screen p-5 pl-7 gap-y-5":"-ml-[65px]  -left-full"}`}>
+          <button className='lg:hidden block'
           onClick={()=>setActive(active?false:true)}
           >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -36,7 +36,7 @@ const Navbar = () => {
             className='hover:text-gray-200'>{link}</Link>
           })}
         </div>
-        <div className='flex gap-3 items-center justify-center text-sm text-white' >
+        <div className='md:flex hidden gap-3 items-center justify-center text-sm text-white' >
             <button className='rounded-md p-2 bg-[#3eb489] text-white text-sm hover:bg-[#3eb489]/80'>
               Trade
             </button>
