@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.font-saira{
+  font-family: 'Saira Condensed', sans-serif;
+  
+}
+
+body {
+  background: #191919;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.font-ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}
